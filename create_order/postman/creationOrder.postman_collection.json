@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "6ea3233f-d058-4388-8282-bdd59d0253cd",
+		"name": "s4kubernets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CrearOrden",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eb2a1e76-2a97-4009-aed6-bf1bda517b7e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"10996aa7-88b1-4721-84a1-0c58ffc15fe8\",\r\n    \"product_id\":\"56d1e02a-e9a6-4c1b-b36e-1698d79bdb59\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/orders-create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"orders-create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
